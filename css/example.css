@@ -1,0 +1,14 @@
+section p {
+    border: 3px dotted salmon;
+    width: 300px;
+}
+
+.p1p4 {
+    border: 3px dotted blue;
+    width: 300px;
+}
+
+#p1 {
+    border: 3px dotted gray;
+    width: 300px;
+}
