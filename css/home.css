@@ -3,6 +3,7 @@ body {
     margin: auto;
     color: DimGray;
     font-size: 1.1em;
+    font-family: 'Pangolin', cursive;
 }
 
 img {
@@ -92,4 +93,17 @@ hr {
 
 header h3 {
     margin-bottom: 50px;
+}
+
+#education li {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#education {
+    text-align: center;
+}
+
+#publication li {
+    margin-bottom: 10px;
 }
