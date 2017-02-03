@@ -2,69 +2,141 @@
 <html>
 
 <head>
-	<title>About Danny Lin</title>
-    <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <title>About Danny Lin</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<header>
-		<img src="/images/caricature_danny.JPG"alt="Sookie">
-		<h1>Danny Lin</h1>
-		<hr>
-		<h3>Instructional Designer - Fullstack Web Developer</h3>
-		<p>
-			Education makes our life better. 
-			I try to make good courses to make your life better.
-			I hope you get the full advantage out of my courses.
-		</p>
-	</header>
-	
-	<section>
-		<h2>Experience</h2>
-		<p>
-			I started my career as a software engineer. Then I got interested in education because I felt it was the most productive among any other fields. Then I decided to be an educator for my whole life. Now I have been designing instruction and instructing students for more than 8 years. I am very skillful at creating a good learning experience for students. Now I am running Nuts & Bolts, the company providing e-Learning contents.
-		</p>
-	</section>
-	
-	<section>
-		<h2>Education</h2>
-		<ul>
-			<li>Master Degree in Education Technology at Seoul National University</li>
-			<li>Bachelor Degree in Computer Engineering at Ajou University</li>
-		</ul>
-	</section>
-	
-	<section>
-		<h2>Skillset</h2>
-		<table>
-			<tr>
-				<th>Skill Name</th>
-				<th>Description</th>
-			</tr>
-			<tr>
-				<td>Web Development</td>
-				<td>Fullstack web development with Ruby on Rails</td>
-			</tr>
-			<tr>
-				<td>Instructional Design</td>
-				<td>Creating positive learning experiences for students by instruction design</td>
-			</tr>
-		</table>
-	</section>
-	
-	<section>
-		<h2>Publication</h2>
-		<ul>
-			<li><a href="https://www.udemy.com/core-korean-1-build-up-korean-foundations-through-practice/learn/v4/overview">Core Korean 1</a></li>
-			<p>
-				Focuses on forming and speaking Korean expressions through a well designed practice
-			<p>
-		</ul>
-	</section>
-	
-	<footer>
-		<a href="mailto:danny.lin@nutsnbolts.co.kr">Mail to Daniel Lin</a>
-		<p>Since 2017</p> 
-	</footer>
+  <div class="container-fluid">
+    <div class="row">
+      <header class="col-md-8 col-md-offset-2 page-header">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="/images/caricature_danny.JPG" alt="Danny">
+          </div>
+
+          <div class="item">
+            <img src="/images/caricature_danny.JPG" alt="Danny">
+          </div>
+
+          <div class="item">
+            <img src="/images/caricature_danny.JPG" alt="Danny">
+          </div>
+
+          <div class="item">
+            <img src="/images/caricature_danny.JPG" alt="Danny">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+        <h1 class="text-center">Danny Lin</h1>
+        <hr>
+        <h3 class="text-center">Instructional Designer - Fullstack Web Developer</h3>
+        <p>
+                    Education makes our life better. 
+                    I try to make good courses to make your life better.
+                    I hope you get the full advantage out of my courses.
+        </p>
+	    </header>
+    </div>
+
+    <div class="row">
+      <section class="panel panel-default col-md-8 col-md-offset-2">
+        <h2 class="panel-heading text-center"><a data-toggle="collapse" href="#collapse1">Experience</a></h2>
+          <p id="collapse1" class="panel-body panel-collapse collapse text-justify">
+            I started my career as a software engineer. Then I got interested in education because I felt it was the most productive among any other fields. Then I decided to be an educator for my whole life. Now I have been designing instruction and instructing students for more than 8 years. I am very skillful at creating a good learning experience for students. Now I am running Nuts & Bolts, the company providing e-Learning contents.
+          </p>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="panel panel-default col-md-8 col-md-offset-2">
+        <h2 class="panel-heading text-center"><a data-toggle="collapse" href="#collapse2">Education</a></h2>
+          <ul id="collapse2" class="panel-body panel-collapse collapse list-group">
+            <li class="list-group-item">Master Degree in Education Technology at Seoul National University</li>
+            <li class="list-group-item">Bachelor Degree in Computer Engineering at Ajou University</li>
+          </ul>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="panel panel-default col-md-8 col-md-offset-2">
+        <h2 class="panel-heading text-center"><a data-toggle="collapse" href="#collapse3">Skillset</a></h2>
+          <table id="collapse3" class="panel-body panel-collapse collapse table table-hover table-condensed">
+            <tr class="active">
+              <th class="text-center">Skill Name</th>
+              <th class="text-center">Description</th>
+            </tr>
+            <tr>
+              <td class="text-center">Web Development</td>
+              <td>Fullstack web development with Ruby on Rails</td>
+            </tr>
+            <tr>
+              <td class="text-center">Instructional Design</td>
+              <td>Creating positive learning experiences for students by instruction design</td>
+            </tr>
+          </table>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="panel panel-default col-md-8 col-md-offset-2">
+        <h2 class="panel-heading text-center"><a data-toggle="collapse" href="#collapse4">Publication</a></h2>
+        <div id="collapse4" class="panel-body panel-collapse collapse list-group">
+          <a href="https://www.udemy.com/core-korean-1-build-up-korean-foundations-through-practice/learn/v4/overview" class="list-group-item">
+            <h4 class="list-group-item-heading">Core Korean 1</h4>
+            <p class="list-group-item-text">Focuses on forming and speaking Korean expressions through a well designed practice</p>
+          </a>
+          <a href="https://www.udemy.com/core-korean-1-build-up-korean-foundations-through-practice/learn/v4/overview" class="list-group-item">
+            <h4 class="list-group-item-heading">Core Korean 2</h4>
+            <p class="list-group-item-text">Focuses on forming and speaking Korean expressions through a well designed practice</p>
+          </a>
+          <a href="https://www.udemy.com/core-korean-1-build-up-korean-foundations-through-practice/learn/v4/overview" class="list-group-item">
+            <h4 class="list-group-item-heading">Core Korean 3</h4>
+            <p class="list-group-item-text">Focuses on forming and speaking Korean expressions through a well designed practice</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="text-center">
+      <a href="mailto:danny.lin@nutsnbolts.co.kr" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-envelope"></span> Mail to Daniel Lin</a>
+      <p>Since 2017</p> 
+    </footer>
+  </div>
 </body>
 </html>
